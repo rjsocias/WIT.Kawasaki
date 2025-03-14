@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #0b3d91;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: url('homebg.png') no-repeat center center/cover;
+
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #0b3d91;
+}
+
+.hero-content .highlight {
+    color: #00ff00;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-btn {
+    background-color: red;
+    color: white;
+}
+
+.explore-btn {
+    background-color: green;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #00ff00;
+}
+
+.bike {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bike img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bike h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #00ff00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+}
